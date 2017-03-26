@@ -1,4 +1,4 @@
-package com.mors741;
+package com.mors741.ws;
 
 import javax.ejb.Stateless;
 import javax.jws.WebMethod;
