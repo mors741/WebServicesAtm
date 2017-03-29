@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 @WebService
-public class CheckAtm {
+public class CheckAtmSoup {
 
     @PersistenceContext
     EntityManager entityManager;
