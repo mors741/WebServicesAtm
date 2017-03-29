@@ -17,3 +17,6 @@ Shared library must be deployed:
 
 
 https://docs.oracle.com/middleware/1213/wls/RESTF/use-jersey20-ri.htm#RESTF297
+
+## Rest URL example
+http://localhost:7001/atm-ws/atms/15
