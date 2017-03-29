@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 @WebService
-public class CheckAtmSoup {
+public class CheckAtmWs {
 
     @PersistenceContext
     EntityManager entityManager;
@@ -18,6 +18,6 @@ public class CheckAtmSoup {
     @WebMethod
     public String availableCash(int id) {
         Atm atm = entityManager.find(Atm.class, id);
-        return atm.getAmount() + " " + atm.getCurrency();
+        return atm.getTextDescr();
     }
 }

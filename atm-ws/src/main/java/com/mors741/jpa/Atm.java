@@ -30,5 +30,15 @@ public class Atm {
     @Setter
     private int amount;
 
+    public String getTextDescr() {
+        return String.format("id = %d, money = %s %s",
+                id, amount, currency);
+    }
+
+    public String getJsonDescr() {
+        return String.format("{\"id\":\"%d\",\"amount\":\"%s\", \"currency\":\"%s\"}",
+                id, amount, currency);
+    }
+
 
 }
