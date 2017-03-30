@@ -11,6 +11,7 @@
     <modules>
         <module>atm-ws</module>
         <module>atm-ear</module>
+        <module>atm-gui-client</module>
     </modules>
 
     <properties>

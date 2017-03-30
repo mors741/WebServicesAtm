@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. -->
+<xs:schema targetNamespace="http://ws.mors741.com/" version="1.0" xmlns:tns="http://ws.mors741.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="availableCash" type="tns:availableCash"/>
+    <xs:element name="availableCashResponse" type="tns:availableCashResponse"/>
+    <xs:complexType name="availableCash">
+        <xs:sequence>
+            <xs:element name="arg0" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="availableCashResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="return" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
