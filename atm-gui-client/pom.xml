@@ -27,7 +27,7 @@
                         <configuration>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>${basedir}/src/main/resources/wsdl/atm.wsdl</wsdl>
+                                    <wsdl>http://localhost:7001/CheckAtmWs/CheckA1tmWsService?WSDL</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>

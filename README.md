@@ -18,5 +18,14 @@ Shared library must be deployed:
 
 https://docs.oracle.com/middleware/1213/wls/RESTF/use-jersey20-ri.htm#RESTF297
 
+
+##Deployment
+1. mvn clean install atm-ws (atm-ear) _not exploded_ 
+2. deploy atm-ws (atm-ear) on WebLogic
+3. mvn clean install atm-gui-client (client uses deployed wsdl to build itself)
+
+
+
+
 ## Rest URL example
 http://localhost:7001/atm-ws/atms/15
