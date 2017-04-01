@@ -8,12 +8,18 @@
       xmlns:p="http://primefaces.org/ui">
 
 <h:head>
+    <h:outputStylesheet library="css" name="style.css"  />
 </h:head>
 <h:body>
-    <h1>Hello World PrimeFaces</h1>
 
-    <h:form>
-        <p:editor value="#{editor.value}" />
+    <h:form id="atmForm">
+        <p:inputText value="#{mbAtmConsole.atmId}"/>
+        <p:commandButton value="Submit" actionListener="#{mbAtmConsole.checkAtm}"
+                         process="@form" update="@form"/>
+        <h:outputText id="output" value="#{mbAtmConsole.output}"
+                      rendered="#{!mbAtmConsole.output.isEmpty()}" />
+        <h:outputText id="error" value="#{mbAtmConsole.error}"
+                      rendered="#{!mbAtmConsole.error.isEmpty()}" />
     </h:form>
 
 </h:body>

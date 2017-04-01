@@ -1,0 +1,9 @@
+#atmForm\:output {
+    display: block;
+    font-family: Courier;
+}
+
+#atmForm\:error {
+    display: block;
+    color: red;
+}

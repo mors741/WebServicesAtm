@@ -22,7 +22,11 @@ public class CheckAtmRs {
     @Path("{atmid}")
     public Response availableCash(@PathParam("atmid") int id) {
         Atm atm = entityManager.find(Atm.class, id);
-        return Response.ok(atm.getJsonDescr(), MediaType.APPLICATION_JSON).build();
+        if (atm != null) {
+            return Response.ok(atm.getJsonDescr(), MediaType.APPLICATION_JSON).build();
+        } else {
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
 
     }
 
