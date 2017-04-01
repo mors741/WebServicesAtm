@@ -24,13 +24,6 @@
             <version>6.0</version>
         </dependency>
 
-        <!-- Java EE 5 -->
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.1</version>
-        </dependency>
-
         <!-- Java EE 5 Extensions -->
         <dependency>
             <groupId>javax.faces</groupId>
