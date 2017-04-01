@@ -16,26 +16,6 @@
         <finalName>${project.artifactId}</finalName>
     </build>
 
-
-    <dependencyManagement>
-        <dependencies>
-            <!-- Java EE 5 -->
-            <dependency>
-                <groupId>javax.servlet.jsp</groupId>
-                <artifactId>jsp-api</artifactId>
-                <version>2.1</version>
-            </dependency>
-
-            <!-- Java EE 5 Extensions -->
-            <dependency>
-                <groupId>javax.faces</groupId>
-                <artifactId>jsf-api</artifactId>
-                <version>2.0</version>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
         <dependency>
@@ -48,14 +28,14 @@
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
+            <version>2.1</version>
         </dependency>
 
         <!-- Java EE 5 Extensions -->
         <dependency>
             <groupId>javax.faces</groupId>
             <artifactId>jsf-api</artifactId>
-            <scope>provided</scope>
+            <version>2.0</version>
         </dependency>
 
     </dependencies>
