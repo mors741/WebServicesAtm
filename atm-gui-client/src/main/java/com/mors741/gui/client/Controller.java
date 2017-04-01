@@ -9,7 +9,7 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
-    CheckAtmWsService service = new CheckAtmWsService();
+    private CheckAtmWsService service = new CheckAtmWsService();
 
     @FXML
     private TextField atmId;
