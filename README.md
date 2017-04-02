@@ -1,4 +1,4 @@
-##JAX-RS (Jersey) on WebLogic
+## JAX-RS (Jersey) on WebLogic
 Shared library must be deployed:
 
 
@@ -19,7 +19,7 @@ Shared library must be deployed:
 https://docs.oracle.com/middleware/1213/wls/RESTF/use-jersey20-ri.htm#RESTF297
 
 
-##Deployment
+## Deployment
 1. mvn clean install atm-ws & atm-web-client
 2. deploy atm-ws & atm-web-client on WebLogic _not exploded_ 
 3. mvn clean install atm-gui-client (client uses deployed wsdl to build itself)
